@@ -25,17 +25,6 @@
                                 <color key="textColor" red="0.01176470588" green="0.14117647059999999" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQ7-MR-5bp">
-                                <rect key="frame" x="536" y="20" width="44" height="110"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="gyN-aM-h1Y"/>
-                                    <constraint firstAttribute="height" constant="110" id="uGf-L1-5bs"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="down_full"/>
-                                <connections>
-                                    <action selector="eventDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sUV-dA-52g"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP0-du-tKY">
                                 <rect key="frame" x="200" y="468" width="200" height="50"/>
                                 <constraints>
@@ -60,13 +49,16 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5N-a9-9xf">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5N-a9-9xf">
                                 <rect key="frame" x="536" y="150" width="44" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="9HH-cl-cD3"/>
                                     <constraint firstAttribute="height" constant="55" id="rmp-il-utg"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="up_half"/>
+                                <connections>
+                                    <action selector="eventUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xlf-ip-WRp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5Z-63-DLe">
                                 <rect key="frame" x="20" y="410" width="516" height="110"/>
@@ -78,16 +70,22 @@
                                 <color key="textColor" red="0.01176470588" green="0.14117647059999999" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM5-TH-Q0N">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM5-TH-Q0N">
                                 <rect key="frame" x="536" y="410" width="44" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="Ccf-wQ-y96"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="up_full"/>
+                                <connections>
+                                    <action selector="eventUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hw0-vp-rO7"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jv-3X-NpR">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jv-3X-NpR">
                                 <rect key="frame" x="536" y="205" width="44" height="55"/>
                                 <state key="normal" backgroundImage="down_half"/>
+                                <connections>
+                                    <action selector="eventDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L1x-EV-ikQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8o-V2-sX2">
                                 <rect key="frame" x="20" y="280" width="516" height="110"/>
@@ -105,13 +103,19 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9Y-PP-gnY">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9Y-PP-gnY">
                                 <rect key="frame" x="536" y="280" width="44" height="55"/>
                                 <state key="normal" backgroundImage="up_half"/>
+                                <connections>
+                                    <action selector="eventUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M1S-jQ-6Xw"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoM-Im-Nef">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoM-Im-Nef">
                                 <rect key="frame" x="536" y="335" width="44" height="55"/>
                                 <state key="normal" backgroundImage="down_half"/>
+                                <connections>
+                                    <action selector="eventDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9qX-K9-xg2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap events to learn more" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2c-mx-e5d">
                                 <rect key="frame" x="190" y="526" width="220" height="24"/>
@@ -125,6 +129,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQ7-MR-5bp">
+                                <rect key="frame" x="536" y="20" width="44" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="gyN-aM-h1Y"/>
+                                    <constraint firstAttribute="height" constant="110" id="uGf-L1-5bs"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="down_full"/>
+                                <connections>
+                                    <action selector="eventDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sUV-dA-52g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.11764705882352941" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
