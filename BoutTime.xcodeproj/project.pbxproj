@@ -16,6 +16,10 @@
 		8E3B5C1F1D595E4D0033BB64 /* BoutTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B5C1E1D595E4D0033BB64 /* BoutTimeUITests.swift */; };
 		8E3B5C2E1D5960D00033BB64 /* CorrectDing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B5C2C1D5960D00033BB64 /* CorrectDing.wav */; };
 		8E3B5C2F1D5960D00033BB64 /* IncorrectBuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B5C2D1D5960D00033BB64 /* IncorrectBuzz.wav */; };
+		8ECFC7D21D5E7F8E00228637 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECFC7D11D5E7F8E00228637 /* Event.swift */; };
+		8ECFC7D41D5E7FBF00228637 /* EventSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECFC7D31D5E7FBF00228637 /* EventSet.swift */; };
+		8EF077341D612B0D007C5105 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF077331D612B0D007C5105 /* ScoreViewController.swift */; };
+		8EF077361D613F82007C5105 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF077351D613F82007C5105 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		8E3B5C201D595E4D0033BB64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E3B5C2C1D5960D00033BB64 /* CorrectDing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CorrectDing.wav; sourceTree = "<group>"; };
 		8E3B5C2D1D5960D00033BB64 /* IncorrectBuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = IncorrectBuzz.wav; sourceTree = "<group>"; };
+		8ECFC7D11D5E7F8E00228637 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		8ECFC7D31D5E7FBF00228637 /* EventSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSet.swift; sourceTree = "<group>"; };
+		8EF077331D612B0D007C5105 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoreViewController.swift; path = ../ScoreViewController.swift; sourceTree = "<group>"; };
+		8EF077351D613F82007C5105 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 			children = (
 				8E3B5BFE1D595E4D0033BB64 /* AppDelegate.swift */,
 				8E3B5C001D595E4D0033BB64 /* ViewController.swift */,
+				8EF077331D612B0D007C5105 /* ScoreViewController.swift */,
+				8EF077351D613F82007C5105 /* WebViewController.swift */,
+				8ECFC7D11D5E7F8E00228637 /* Event.swift */,
+				8ECFC7D31D5E7FBF00228637 /* EventSet.swift */,
 				8E3B5C021D595E4D0033BB64 /* Main.storyboard */,
 				8E3B5C2C1D5960D00033BB64 /* CorrectDing.wav */,
 				8E3B5C2D1D5960D00033BB64 /* IncorrectBuzz.wav */,
@@ -265,7 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3B5C011D595E4D0033BB64 /* ViewController.swift in Sources */,
+				8EF077361D613F82007C5105 /* WebViewController.swift in Sources */,
+				8ECFC7D21D5E7F8E00228637 /* Event.swift in Sources */,
+				8EF077341D612B0D007C5105 /* ScoreViewController.swift in Sources */,
 				8E3B5BFF1D595E4D0033BB64 /* AppDelegate.swift in Sources */,
+				8ECFC7D41D5E7FBF00228637 /* EventSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +506,7 @@
 				8E3B5C251D595E4D0033BB64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E3B5C261D595E4D0033BB64 /* Build configuration list for PBXNativeTarget "BoutTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +515,7 @@
 				8E3B5C281D595E4D0033BB64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E3B5C291D595E4D0033BB64 /* Build configuration list for PBXNativeTarget "BoutTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +524,7 @@
 				8E3B5C2B1D595E4D0033BB64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
