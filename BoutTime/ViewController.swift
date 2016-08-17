@@ -45,6 +45,7 @@ class ViewController: UIViewController {
     let numberOfRounds = 3
     var roundCount = 0
     var isNextRound = true
+    var isShakeable = true
     
     enum Result {
         case Success
@@ -53,7 +54,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupButtons()
         setupRound()
         
@@ -75,7 +76,7 @@ class ViewController: UIViewController {
         
         seconds -= 1
         if seconds == 0 {
-            print("Time's up")
+            //print("Time's up")
             checkResults()
         }
         
@@ -85,7 +86,9 @@ class ViewController: UIViewController {
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         if event?.subtype == .MotionShake {
             
-            checkResults()
+            if isShakeable == true {
+                checkResults()
+            }
         }
     }
     
@@ -93,7 +96,7 @@ class ViewController: UIViewController {
         
         let button = sender as! UIButton
         
-        print("event\(button.tag) label pressed")
+        //print("event\(button.tag) label pressed")
         
         performSegueWithIdentifier("showWebView", sender: button)
         
@@ -145,7 +148,7 @@ class ViewController: UIViewController {
     
     @IBAction func nextRound(sender: AnyObject) {
         
-        print("next round pressed")
+        //print("next round pressed")
         randomEvents.removeAll()
         correctEvents.removeAll()
         eventIndexes.removeAll()
@@ -184,13 +187,7 @@ class ViewController: UIViewController {
     func setupRound() {
         
         isNextRound = true
-        
-        event1DownButton.enabled = true
-        event2UpButton.enabled = true
-        event2DownButton.enabled = true
-        event3UpButton.enabled = true
-        event3DownButton.enabled = true
-        event4UpButton.enabled = true
+        isShakeable = true
         
         event1Button.enabled = false
         event2Button.enabled = false
@@ -221,6 +218,11 @@ class ViewController: UIViewController {
         event3UpButton.setBackgroundImage(UIImage(named: "up_half_selected"), forState: .Highlighted)
         event3DownButton.setBackgroundImage(UIImage(named: "down_half_selected"), forState: .Highlighted)
         event4UpButton.setBackgroundImage(UIImage(named: "up_full_selected"), forState: .Highlighted)
+        
+        event1Button.layer.cornerRadius = 5
+        event2Button.layer.cornerRadius = 5
+        event3Button.layer.cornerRadius = 5
+        event4Button.layer.cornerRadius = 5
     }
     
     func checkResults() {
@@ -238,14 +240,7 @@ class ViewController: UIViewController {
     }
     
     func displayResults(result: Result) {
-        
-        event1DownButton.enabled = false
-        event2UpButton.enabled = false
-        event2DownButton.enabled = false
-        event3UpButton.enabled = false
-        event3DownButton.enabled = false
-        event4UpButton.enabled = false
-        
+
         event1Button.enabled = true
         event2Button.enabled = true
         event3Button.enabled = true
@@ -259,19 +254,20 @@ class ViewController: UIViewController {
         switch result {
         case .Failure:
             nextRoundButton.setBackgroundImage(UIImage(named: "next_round_fail"), forState: .Normal)
-            print("Wrong!")
+            //print("Wrong!")
         case .Success:
             nextRoundButton.setBackgroundImage(UIImage(named: "next_round_success"), forState: .Normal)
             correctAnswers += 1
-            print("All correct!!!!")
+            //print("All correct!!!!")
         }
         
         roundCount += 1
+        isShakeable = false
 
     }
     
     @IBAction func unwindSecondView(segue: UIStoryboardSegue) {
-        print("unwind fired in first view")
+        //print("unwind fired in first view")
         
         if isNextRound == false {
             
@@ -282,7 +278,7 @@ class ViewController: UIViewController {
     
     func displayScore() {
         
-        print("Your Score \(correctAnswers)/\(numberOfRounds)")
+        //print("Your Score \(correctAnswers)/\(numberOfRounds)")
         
         roundCount = 0
         
@@ -306,8 +302,8 @@ class ViewController: UIViewController {
         if segue.identifier == "showWebView" {
             if let button = sender as? UIButton {
                 
-                print("prepareforsegue \(button.tag)")
-                print(randomEvents[button.tag].url)
+               //print("prepareforsegue \(button.tag)")
+               //print(randomEvents[button.tag].url)
                 let url = randomEvents[button.tag].url
                 
                 if let destinationView = segue.destinationViewController as? WebViewController {
