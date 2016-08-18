@@ -36,13 +36,13 @@ class ViewController: UIViewController {
     var eventIndexes = [Int]()
     var randomEvents = [Event]()
     var correctEvents = [Event]()
-    let maxSeconds = 30
+    let maxSeconds = 60
     var seconds = 0
     var timer = NSTimer()
     let eventsPerRound = 4
     var randomIndex = 0
     var correctAnswers = 0
-    let numberOfRounds = 3
+    let numberOfRounds = 6
     var roundCount = 0
     var isNextRound = true
     var isShakeable = true
