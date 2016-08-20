@@ -10,7 +10,7 @@ import Foundation
 
 struct EventSet {
     
-    var allEvents: [Event] = [
+    let allEvents: [Event] = [
         Event(description: "Star Wars was released in theaters", date:"1977-05-25", url: "https://en.wikipedia.org/wiki/Star_Wars"),
         Event(description: "Japanese bombed Pearl Harbor", date:"1941-12-07", url: "https://en.wikipedia.org/wiki/Pearl_Harbor"),
         Event(description: "Neil Armstrong walked on the moon", date:"1969-07-20", url: "https://en.wikipedia.org/wiki/Moon_landing"),
