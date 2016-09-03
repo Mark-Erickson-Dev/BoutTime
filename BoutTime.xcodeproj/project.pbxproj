@@ -18,7 +18,7 @@
 		8E3B5C2F1D5960D00033BB64 /* IncorrectBuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B5C2D1D5960D00033BB64 /* IncorrectBuzz.wav */; };
 		8ECFC7D21D5E7F8E00228637 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECFC7D11D5E7F8E00228637 /* Event.swift */; };
 		8ECFC7D41D5E7FBF00228637 /* EventSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECFC7D31D5E7FBF00228637 /* EventSet.swift */; };
-		8EF077341D612B0D007C5105 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF077331D612B0D007C5105 /* ScoreViewController.swift */; };
+		8EE0C7EB1D7B6262002BD2B9 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0C7EA1D7B6262002BD2B9 /* ScoreViewController.swift */; };
 		8EF077361D613F82007C5105 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF077351D613F82007C5105 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +57,7 @@
 		8E3B5C2D1D5960D00033BB64 /* IncorrectBuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = IncorrectBuzz.wav; sourceTree = "<group>"; };
 		8ECFC7D11D5E7F8E00228637 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		8ECFC7D31D5E7FBF00228637 /* EventSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSet.swift; sourceTree = "<group>"; };
-		8EF077331D612B0D007C5105 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoreViewController.swift; path = ../ScoreViewController.swift; sourceTree = "<group>"; };
+		8EE0C7EA1D7B6262002BD2B9 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		8EF077351D613F82007C5105 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,8 +111,8 @@
 			children = (
 				8E3B5BFE1D595E4D0033BB64 /* AppDelegate.swift */,
 				8E3B5C001D595E4D0033BB64 /* ViewController.swift */,
-				8EF077331D612B0D007C5105 /* ScoreViewController.swift */,
 				8EF077351D613F82007C5105 /* WebViewController.swift */,
+				8EE0C7EA1D7B6262002BD2B9 /* ScoreViewController.swift */,
 				8ECFC7D11D5E7F8E00228637 /* Event.swift */,
 				8ECFC7D31D5E7FBF00228637 /* EventSet.swift */,
 				8E3B5C021D595E4D0033BB64 /* Main.storyboard */,
@@ -279,9 +279,9 @@
 				8E3B5C011D595E4D0033BB64 /* ViewController.swift in Sources */,
 				8EF077361D613F82007C5105 /* WebViewController.swift in Sources */,
 				8ECFC7D21D5E7F8E00228637 /* Event.swift in Sources */,
-				8EF077341D612B0D007C5105 /* ScoreViewController.swift in Sources */,
 				8E3B5BFF1D595E4D0033BB64 /* AppDelegate.swift in Sources */,
 				8ECFC7D41D5E7FBF00228637 /* EventSet.swift in Sources */,
+				8EE0C7EB1D7B6262002BD2B9 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
